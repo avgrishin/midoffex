@@ -1,0 +1,74 @@
+package midoffext;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcljpg,
+  vcl,
+  dbrtl,
+  vclactnband,
+  vclx,
+  vclie,
+  bdertl,
+  vcldb,
+  VclSmp,
+  adortl,
+  dclOfficeXP,
+  EhLib70,
+  RxCtl7,
+  RxDB7,
+  tb2k_d7,
+  tbx_d7,
+  dac70,
+  sdac70,
+  fs7,
+  frx7,
+  frxe7,
+  fsDB7,
+  frxDB7,
+  fqb70,
+  fsBDE7,
+  frxBDE7,
+  fsADO7,
+  frxADO7,
+  mycode7;
+
+contains
+  PMain in 'PMain.pas',
+  ReportsADO in 'ReportsADO.pas' {fReportsADO1},
+  TableADO in 'TableADO.pas' {fTableADO},
+  ParamADO1 in 'ParamADO1.pas' {fParamADO1},
+  ReportCADO1 in 'ReportCADO1.pas' {fReportCADO1},
+  ReportCADO3 in 'ReportCADO3.pas' {fReportCADO3},
+  RepTypeADO in 'RepTypeADO.pas' {fRepTypeADO1},
+  SpravADO1 in 'SpravADO1.pas' {fSpravADO1},
+  TableADO1 in 'TableADO1.pas' {fTableADO1},
+  DM in 'DM.pas' {DM1: TDataModule},
+  Number2Txt in 'Number2Txt.pas',
+  getNode in 'getNode.pas';
+
+end.
